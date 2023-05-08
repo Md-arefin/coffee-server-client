@@ -11,8 +11,9 @@ const AddCoffee = () => {
         const supplier = form.supplier.value;
         const category = form.category.value;
         const details = form.details.value;
+        const taste = form.taste.value;
 
-        const newCoffee = { name, quantity, supplier, category, details };
+        const newCoffee = { name, quantity, supplier, category, details, taste };
 
         console.log(newCoffee)
 
@@ -40,7 +41,7 @@ const AddCoffee = () => {
     }
     return (
         <div>
-            <h1 className='text-4xl m-6 p-6 text-white'>Add Coffee</h1>
+            <h1 className='text-4xl m-6 p-6 text-white text-center'>Add Coffee</h1>
             <form className="md:w-[90%] mx-auto" onSubmit={handleCoffee}>
                 {/* form name and quantity row */}
                 <div className="m-20 md:flex gap-5">
